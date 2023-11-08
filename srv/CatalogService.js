@@ -17,9 +17,7 @@ module.exports = cds.service.impl(async function(srv){
             salesOrderApi.schema.TO_ITEM
         )
         .execute({
-            "url": "http://122.162.240.164:8030",
-            "username": "mob23",
-            "password": "india@23"
+            destinationName: "S4HANA"
         });
         return dataSalesData;
     };
